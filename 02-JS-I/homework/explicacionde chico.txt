@@ -1,0 +1,27 @@
+# Homework: Introducción a Javascript
+
+---
+
+## Instrucciones
+
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+ * Variables
+variables es una casilla a la cual asignarle un valor (nombre o numero) para usar luego ej: var "mati"= "primo" var "edaddemati" =38
+ * Strings
+las string son textos sin sentido que le pones a una variable, osea que solo lo veremos y comprenderemos nosotros ej, "primo" de mas arriba
+ * Funciones (argumentos, `return`)
+una funcion es algo que le indicamos al programa que haga con las variables o con valores, empieza y termina en las mismas lineas desde funtion hasta cerrar la llave, luego si se consulta el valor de la function arrojara indefinido
+argumentos
+funtion nombredelafuncion (aca va el argumento ej un nombre) {
+     console.log ('entendes,  ' + nombre);
+}
+el return es como el console.log nada mas que no lo imprime, se lo guarda retorna un valor o algo
+ * Declaraciones `if`
+
+el if es para dar opciones a la fuction ej si la edad es mayor que 20 retorna es grande, y luego podes poner else que es si no se cumple el if
+
+ * Valores booleanos (`true`, `false`)
+siempre va a ser verdadero o falso, y eso se lo asignamos nosotros
+
+
