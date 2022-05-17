@@ -93,7 +93,7 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (numero== 10 || 5) {
+  if (numero== 10 || numero==5) {
     return true;
   }
   return false ;
@@ -131,15 +131,17 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if (numero %3 ==0){
+  
+   if (numero %3 == 0 && numero%5 ==0 ) {
+    return "fizzbuzz";
+  }
+  else if (numero %3 ==0){
     return "fizz";
   }
   else if (numero%5 ==0) {
     return "buzz";
   }
-  else if (numero %3 && numero%5) {
-    return "fizzbuzz";
-  }
+ 
   return numero
 }
 
@@ -150,19 +152,19 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
-  if (num1 > num2 && num1>num3 && num1 >0) {
-    return "Número 1 es mayor y positivo";
-  }
-  else if (num1<0 || num2< 0 || num3<0){
+     if (num1<0 || num2< 0 || num3<0){
     return "Hay negativos";
     }
+    else if (num2===0 || num1 ==0 || num2==0 ){
+      return "Error" ;
+        }
+        else if (num1 > num2 && num1>num3 && num1 >0) {
+          return "Número 1 es mayor y positivo";
+        }
     else if (num3> num1 && num3 >num2){
       return num3 +1
     }
-    else if (num1 == 0 || num3+1==0 ){
-      return "Error" ;
-        }
-        return false
+            return false
 }
 
 function esPrimo(numero) {
@@ -171,10 +173,18 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  for ( numero % numero == 0 ; numero %1 == 0; numero != 0  ||  numero!=1) {
-  return true
+  if ( numero<2) {
+  return false
     }
-  return false 
+  
+  for (n = 2 ; n< numero; n++) {
+ if (numero%n === 0 ){
+   
+      return false 
+  }
+return true
+
+}
 }
 
 function esVerdadero(valor){
